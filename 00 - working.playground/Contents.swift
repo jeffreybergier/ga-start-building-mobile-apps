@@ -1,12 +1,9 @@
 import Foundation
 
-let appleFeed = "https://www.apple.com/pr/feed.json"
-let appleFeedURL = NSURL(string: appleFeed)
-let appleFeedRequest = NSURLRequest(URL: appleFeedURL!)
-let appleFeedDataTask = NSURLSession.sharedSession().dataTaskWithRequest(appleFeedRequest)
+func openURL(url: NSURL) {
+    NSLog("\(url)") // Log the URL to the console
+}
 
+//func openURL(url: NSURL) -> Bool {
+//}
 
-let ages: [String : Int] = ["Sam" : 22, "Jim" : 49]
-
-let jimsAge = ages["Jim"]
-let jessiesAge = ages["Jessie"]
